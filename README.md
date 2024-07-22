@@ -13,32 +13,34 @@ A simple 2D golf game implemented in C++ using OpenGL. This game features a two-
 
 ## Prerequisites
 
-To build and run this game, you'll need the following libraries and tools:
+To build and run this game, you'll need:
 
-- C++ compiler with C++11 support
-- OpenGL
-- GLFW3
-- GLAD
-- GLM
-- GLUT
+- Visual Studio 2022 with C++ development workload
+- vcpkg package manager
+
+## Setting Up the Project
+
+1. Clone this repository: https://github.com/RashadAR/GolfGame.git
+   cd GolfGame
+2. Install the required packages using vcpkg:
+   vcpkg install glfw3:x64-windows
+   vcpkg install glad:x64-windows
+   vcpkg install glm:x64-windows
+   vcpkg install freeglut:x64-windows
+3. Integrate vcpkg with Visual Studio:
+   vcpkg integrate install
 
 ## Building the Game
 
-1. Clone this repository:
-https://github.com/RashadAR/GolfGame.git
-
-2. Make sure you have all the required libraries installed on your system.
-
-3. Compile the game using your preferred C++ compiler. For example, using g++:
-   g++ -std=c++11 main.cpp -o golf_game -lGL -lGLU -lglfw -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl
-
-   
-Note: The exact compilation command may vary depending on your system and where the libraries are installed.
+1. Open the project in Visual Studio 2022.
+2. Set the build configuration to Release and the platform to x64.
+3. Build the solution (Ctrl + Shift + B).
 
 ## Running the Game
 
-After successful compilation, run the game using:
-./golf_game
+After successful compilation, you can run the game directly from Visual Studio by pressing F5 or clicking the "Start Debugging" button.
+
+Alternatively, you can navigate to the output directory (usually `x64/Release/`) and run the executable directly.
 
 ## How to Play
 
