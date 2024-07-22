@@ -21,13 +21,19 @@ To build and run this game, you'll need:
 ## Setting Up the Project
 
 1. Clone this repository: https://github.com/RashadAR/GolfGame.git
+
    cd GolfGame
-2. Install the required packages using vcpkg:
+3. Install the required packages using vcpkg:
+
    vcpkg install glfw3:x64-windows
+   
    vcpkg install glad:x64-windows
+   
    vcpkg install glm:x64-windows
+   
    vcpkg install freeglut:x64-windows
-3. Integrate vcpkg with Visual Studio:
+5. Integrate vcpkg with Visual Studio:
+   
    vcpkg integrate install
 
 ## Building the Game
